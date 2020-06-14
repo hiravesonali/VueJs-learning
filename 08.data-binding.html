@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello in VueJs.</title>
+</head>
+<!-- 
+   v-bind keyword bind one or more attributes to an element.
+-->
+
+<body>
+    <div id="root">
+        <span v-bind:class="className"></span>
+        <h1>{{ message }}</h1>
+        <input v-model='message'>
+    </div>
+</body>
+
+</html>
+<script src="https://unpkg.com/vue"></script>
+<script type="text/javascript">
+    var App = new Vue({
+        el: "#root",
+        data: {
+            message: 'Hello there',
+            className: 'span-class',
+        }
+    });
+</script>
