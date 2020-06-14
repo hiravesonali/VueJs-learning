@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello in VueJs.</title>
+</head>
+<!-- 
+   v-for directive to render things in a loop.
+-->
+
+<body>
+    <div id="root">
+        <li v-for="i in 11">
+            {{ i }} X 4 = {{ i * 4 }}.
+        </li>
+    </div>
+</body>
+
+</html>
+<script src="https://unpkg.com/vue"></script>
+<script type="text/javascript">
+    var App = new Vue({
+        el: "#root",
+    });
+</script>

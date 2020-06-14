@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello in VueJs.</title>
+</head>
+<!-- 
+   v-bind keyword bind one or more attributes to an element.
+-->
+
+<body>
+    <div id="root">
+        <!-- bind an attribute -->
+        <img v-bind:src="imageSrc">
+        <!-- shorthand -->
+        <img:src="imageSrc">
+            <!-- with inline string concatenation -->
+            <img:src="/path/to/images/` + fileName">
+                <!-- class binding -->
+                <div:class="{red:isRed}">
+    </div>
+    </div>
+</body>
+
+</html>
+<script src="https://unpkg.com/vue"></script>
+<script type="text/javascript">
+    var App = new Vue({
+        el: "#root",
+        data: {
+
+        }
+    });
+</script>

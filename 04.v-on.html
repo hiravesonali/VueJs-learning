@@ -9,10 +9,13 @@
     form or input or on anything
    { v-on:eventName="method" }
 -->
+<!-- 
+    prevent -> stops redirection after submission
+-->
 
 <body>
     <div id="root">
-        <form v-on:submit="submitHandle">
+        <form v-on:submit.prevent="submitHandle">
             <button>Submit</button>
         </form>
     </div>

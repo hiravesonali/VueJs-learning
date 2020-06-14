@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello in VueJs.</title>
+</head>
+<!-- 
+   v-for directive to render things in a loop.
+-->
+
+<body>
+    <div id="root">
+        <li v-for="currentName in names">
+            Hello {{ currentName.name }}
+        </li>
+    </div>
+</body>
+
+</html>
+<script src="https://unpkg.com/vue"></script>
+<script type="text/javascript">
+    var App = new Vue({
+        el: "#root",
+        data: {
+            names: [{
+                name: 'John'
+            }, {
+                name: 'Sonali'
+            }, {
+                name: 'Ramesh'
+            }, {
+                name: 'Vikas'
+            }, ]
+        }
+    });
+</script>
