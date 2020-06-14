@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello in VueJs.</title>
+</head>
+<!-- 
+    v-on is used to bind events to a button,
+    form or input or on anything
+   { v-on:eventName="method" }
+-->
+
+<body>
+    <div id="root">
+        <form v-on:submit="submitHandle">
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
+<script src="https://unpkg.com/vue"></script>
+<script type="text/javascript">
+    var App = new Vue({
+        el: "#root",
+        methods: {
+            submitHandle: function() {
+                alert(1);
+            }
+        }
+    });
+</script>
