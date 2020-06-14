@@ -4,10 +4,15 @@
 <head>
     <title>Hello in VueJs.</title>
 </head>
+<!-- 
+    v-show expects boolean value,
+    if boolean value true - v-show is bind
+    value false - v-show is hidden
+-->
 
 <body>
     <div id="root">
-        <p>{{ name }}</p>
+        <p v-show="heading">{{ name }}</p>
     </div>
 </body>
 
@@ -18,6 +23,7 @@
         el: "#root",
         data: {
             name: "Hello VueJS",
+            heading: false,
         }
     });
 </script>
